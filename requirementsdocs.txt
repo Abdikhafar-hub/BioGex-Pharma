@@ -1,0 +1,68 @@
+Biogex Pharmaceuticals Website Development Questionnaire
+1. Company Overview
+1.1 Company Background
+What is the history of Biogex Pharmaceuticals?
+ Founded in 2024, specialising in pharmaceutical distribution, import and local manufacturing.]
+What is the company’s mission and vision?
+Mission:  To provide quality, affordable pharmaceutical products to improve the wellbeing of communities.
+Building for a better and healthier future
+Vision:  To be the leading end to end pharmaceutical distributor in Africa.]
+What are the company’s core values?
+ 3.Team work 4. Excellence,1. Customer Focus, 2.Innovation.]
+What are the primary business goals for the next 1-3 years?
+ Expand market share, introduce new products, enhance customer service.]
+Leading distributor of generic and branded products
+Pharmaceutical imports
+Local Manufacturing (Africa's First biopharmaceutical industry) 
+2. Target Audience
+2.1 Understanding Your Audience
+Who are your primary target audiences?
+ Pharmacies, healthcare providers, hospitals]
+What are the key needs and preferences of your target audience?
+ Reliable product supply, quality assurance, competitive pricing.]
+What challenges do your target audiences face?
+ Finding reliable suppliers,efficient supply chain.  managing inventory, accessing products at an affordable pricing.]
+3. Current Digital Presence
+3.1 Website Analysis
+Do you have an existing website? If yes, what is the URL? NO
+ www.biogexpharma.com]
+What are the strengths and weaknesses of your current website? N/A
+Strengths:  Easy navigation, well-organised product information.]
+Weaknesses:  Outdated design, slow loading times.]
+What other digital assets do you currently use?
+ Social media profiles, email newsletters.]
+4. Website Goals
+4.1 Objectives and KPIs
+What are the main goals for the new website?
+ Increase brand awareness, provide detailed product information, improve user experience and interaction)t
+What key performance indicators (KPIs) will be used to measure the success of the website?
+ Website traffic, lead generation, user engagement, conversion rates.]
+4.2 Key Features and Functionalities
+What essential features do you want on the new website?
+Homepage:  Overview of services, latest news.]
+About Page:  Company history, team members.]
+Contact Page:  Contact form, contact details.]
+Blog:  Articles, news updates.]
+Products Catalogue:  Product listings, search and filter options.]
+Are there any advanced functionalities you are considering?
+ Online ordering, customer portal, downloadable resources.]
+What user actions should be easy to complete on the website?
+[e.gFinding product information, contacting the company, subscribing to newsletters. Get in touch on Whatsapp.
+5. Content Strategy
+5.1 Content Needs
+What types of content will be needed for the website?
+Product Descriptions:  Details about pharmaceutical products.]
+Company Information:  About us, mission, vision.]
+Blog Posts:  Industry news, updates.]
+Client Testimonials:  Reviews from satisfied clients.]
+Will any content be repurposed from existing materials?
+ Existing product descriptions, company brochures.]
+Who will be responsible for creating the content?
+ In-house team, external writers.]
+5.2 Visual and Branding Elements
+Do you have existing branding guidelines that need to be followed?
+[e.g Logo, colour scheme, fonts.]
+What types of visuals will be used on the website?
+ Product images, team photos, infographics.]
+How should the visuals support the overall brand image?
+ Professional, trustworthy, innovative.]

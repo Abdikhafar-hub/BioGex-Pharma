@@ -11,6 +11,8 @@ import { Navbar } from '@/components/global/Navbar'
 import IntroTemplate from '@/intro-template'
 import { urlForOpenGraphImage } from '@/sanity/lib/utils'
 import { loadHomePage, loadSettings } from '@/sanity/loader/loadQuery'
+import { Navbar1 } from '@/components/sections/NavBar'
+import { Footer4 } from '@/components/sections/Footer'
 
 const LiveVisualEditing = dynamic(
   () => import('@/sanity/loader/LiveVisualEditing'),
@@ -50,19 +52,19 @@ export default async function IndexRoute({
 }) {
   return (
     <>
-      <div className="flex min-h-screen flex-col bg-white text-black">
-        <Suspense>
-          <Navbar />
-        </Suspense>
-        <div className="mt-20 flex-grow px-4 md:px-16 lg:px-32">
-          <Suspense>{children}</Suspense>
+      <div className="flex min-h-screen flex-col  text-black relative">
+        <Navbar1 />
+
+        
+        <div className=" flex-grow ">
+          {children}
         </div>
         <Suspense>
-          <Footer />
+          <Footer4 />
         </Suspense>
-        <Suspense>
+        {/* <Suspense>
           <IntroTemplate />
-        </Suspense>
+        </Suspense> */}
       </div>
       {draftMode().isEnabled && <LiveVisualEditing />}
     </>
