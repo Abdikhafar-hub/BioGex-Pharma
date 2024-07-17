@@ -27,11 +27,11 @@ function ContactUs() {
   </div>
   <div className="flex items-center justify-start mb-6 w-full max-w-md">
     <FaPhoneAlt className="text-emerald-700 w-6 h-6 mr-4" />
-    <p className="text-lg text-gray-600">+234 123 456 7890</p>
+    <p className="text-lg text-gray-600">+254 748 763980</p>
   </div>
   <div className="flex items-center justify-start mb-6 w-full max-w-md">
     <FaWhatsapp className="text-emerald-700 w-6 h-6 mr-4" />
-    <p className="text-lg text-gray-600">+234 987 654 3210</p>
+    <p className="text-lg text-gray-600">+254 748 763980</p>
   </div>
 </div>
 
