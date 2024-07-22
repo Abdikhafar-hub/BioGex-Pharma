@@ -1,5 +1,6 @@
 'use client'
 
+import { ChevronRightIcon } from '@sanity/icons';
 import React from 'react';
 
 export interface MyButtonProps {
@@ -22,12 +23,10 @@ const Button: React.FC<MyButtonProps> = ({ title, onClick, variant = 'primary' }
     <button onClick={onClick} className={styles[variant]}>
       <p
       className='text-center flex items-center justify-center'
-      >{title}
-        {variant  && <span className="inline-block ml-1 text-white-600">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="feather feather-chevron-right">
-            <polyline points="9 18 15 12 9 6"></polyline>
-          </svg>
-        </span>}
+      ><span>{title}</span>
+        {variant  &&
+         <ChevronRightIcon  className="w-8 h-8" />
+        }
       </p>
     </button>
   );

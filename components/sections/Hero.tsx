@@ -45,7 +45,7 @@ function Hero() {
               
                />
                <Button
-              title='Explor Our Products'
+              title='Explore Our Products'
               variant='link'
               
                />

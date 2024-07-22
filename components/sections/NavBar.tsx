@@ -115,9 +115,11 @@ export const Navbar1 = (props: Navbar1Props) => {
     };
   }, []);
 
-  const navBgClass = scrollPosition > 80 ? 'bg-white text-black lg:min-h-12' : ' bg-transparent  lg:text-white lg:min-h-20';
-  const imgsrc = scrollPosition > 80 ? "/logofullgreenbgless.png" : "/logofullbgless.png";
-  const motiondivbg = scrollPosition > 80 ? "bg-green-700" : "bg-white";
+  const notHome = pathname === '/none'
+
+  const navBgClass = scrollPosition > 80  || notHome ? 'bg-emerald-100 text-black lg:min-h-12' : ' bg-transparent  lg:text-white lg:min-h-20';
+  const imgsrc = scrollPosition > 80  || notHome ? "/logofullgreenbgless.png" : "/logofullbgless.png";
+  const motiondivbg = scrollPosition > 80  || notHome ? "bg-green-700" : "bg-white";
 
   if (pathname.match('/studio')) {
     return null;
@@ -270,7 +272,7 @@ export const Navbar1Defaults: Navbar1Props = {
     { title: "Home", url: "#" },
     { title: "About Us", url: "#" },
     { title: "Blog", url: "#" },
-    { title: "Products", url: "#" },
+    { title: "Products", url: "products" },
     {
       title: "Services",
       url: "#",

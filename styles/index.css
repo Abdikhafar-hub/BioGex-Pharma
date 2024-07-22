@@ -1,7 +1,9 @@
-html {
+/* html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  width: 100%;
+  height: 100%;
 }
 
 p:not(:last-child) {
@@ -15,4 +17,4 @@ ul {
 
 ol {
   list-style-type: disc;
-}
+} */
