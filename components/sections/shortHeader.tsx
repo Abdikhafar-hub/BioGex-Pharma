@@ -18,7 +18,7 @@ export const Header62 = (props: Header62Props) => {
   } as Props;
   return (
     <header className={`px-[5%] py-12 pt-16 bg-[url('/pillsinbowlsgreenbg.jpg')] w-full flex flex-col items-center justify-center `}>
-      <div className="container max-w-lg text-center">
+      <div className="container max-w-3xl text-center">
         {/* <p className="mb-3 font-semibold text-slate-100 md:mb-4">{tagline}</p> */}
         <h1 className="mb-5 text-6xl font-bold md:mb-6 md:text-9xl lg:text-10xl text-emerald-50">{heading}</h1>
         <p className="md:text-md text-slate-100">{description}</p>

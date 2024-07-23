@@ -33,7 +33,7 @@ const ProductsTable = () => {
           <table className="min-w-full bg-white overflow-y-auto">
             <thead className="bg-slate-100">
               <tr>
-                {/* <th className="px-4 py-4 border-b">Number</th> */}
+                <th className="px-4 py-4 border-b">Number</th>
                 <th className="px-4 py-4 border-b text-start font-medium">Product</th>
                 {/* <th className="px-4 py-4 border-b text-start font-medium">Description</th> */}
                 <th className="px-4 py-4 border-b text-start font-medium">Price(KSh)</th>
@@ -42,9 +42,9 @@ const ProductsTable = () => {
             <tbody>
               {Array.from({ length: 5}).map((_, index) => (
                 <tr key={index} className={`${index % 2 === 0 && 'bg-slate-50'}`}>
-                  {/* <td className="px-4 py-4 border-b">
+                  <td className="px-4 py-4 border-b">
                     <div className="animate-pulse h-8 bg-slate-300/50 rounded"></div>
-                  </td> */}
+                  </td>
                   <td className="px-4 py-4 border-b">
                     <div className="animate-pulse h-8 bg-slate-300/50 rounded"></div>
                   </td>
@@ -74,7 +74,7 @@ const ProductsTable = () => {
         <table className="min-w-full bg-white overflow-y-auto">
           <thead className="bg-slate-100">
             <tr>
-              {/* <th className="px-4 py-2 border-b">No.</th> */}
+              <th className="px-4 py-2 border-b">No.</th>
               <th className="px-4 py-2 border-b text-start font-medium">Product</th>
               {/* <th className="px-4 py-2 border-b">Description</th> */}
               <th className="px-4 py-2 border-b text-start font-medium">Price(KSh)</th>
@@ -83,7 +83,7 @@ const ProductsTable = () => {
           <tbody>
             {products.map((product, index) => (
               <tr key={index} className={`${product?.number % 2 === 0 && 'bg-slate-50'}`}>
-                {/* <td className="px-2 py-2 border-b">{product.number}</td> */}
+                <td className="px-2 py-2 border-b">{product.number}</td>
                 <td className="px-4 py-2 border-b flex flex-col ">
                   <span className='text-slate-600 text-sm md:text-base font-semibold'>{product.product}</span>
                   <span className='text-xs md:text-sm text-slate-500'>{product.description}</span>
