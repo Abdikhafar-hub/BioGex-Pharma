@@ -23,7 +23,7 @@ function Page() {
 
       />
 
-      <div className="py-20 px-4 md:px-10 lg:px-16 w-full h-full">
+      <div className="py-20 px-6 md:px-10 lg:px-16 w-full h-full">
         <ProductsTable />
       </div>
     </div>
