@@ -3,6 +3,7 @@ import type { ButtonProps } from "@relume_io/relume-ui";
 import Image from "next/image";
 import { RxChevronRight } from "react-icons/rx";
 import Button from "./Button";
+import { MissionVision } from "./MissionandVision";
 
 type ImageProps = {
   src: string;
@@ -29,7 +30,7 @@ export const WhoWeAre = (props: WhoWeAreProps) => {
       <div className="container">
         <div className="grid grid-cols-1 gap-y-12 md:grid-cols-2 md:items-center md:gap-x-12 lg:gap-x-20">
           <div
-          className="flex flex-col items-center justify-center md:justify-start md:items-start  text-center md:text-left w-full"
+          className="flex flex-col items-center justify-center md:justify-start md:items-start  text-ceter md:text-left w-full"
         >
             <p className="text-xs text-emerald-400  md:text-sm mb-2 bg-emerald-600/10 border border-emerald-300/50 p-1 w-fit rounded-lg font-semibold md:mb-4">{tagline}</p>
             <h2 className="mb-5 text-slate-600  text-xl font-bold md:mb-6 md:text-2xl lg:text-4xl">{heading}</h2>
@@ -53,6 +54,7 @@ export const WhoWeAre = (props: WhoWeAreProps) => {
             />
           </div>
         </div>
+        <MissionVision/>
       </div>
     </section>
   );

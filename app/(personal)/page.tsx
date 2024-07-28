@@ -14,6 +14,7 @@ import Testimonials from '@/components/sections/Testimonials'
 import ContactUs from '@/components/sections/contactus'
 import { InfiniteMovingCards } from '@/components/sections/infintecards'
 import { InfiniteMovingCardsDemo } from '@/components/sections/test2'
+import { Contact24 } from '@/components/sections/contactlist'
 const HomePagePreview = dynamic(
   () => import('@/components/pages/home/HomePagePreview'),
 )
@@ -59,6 +60,7 @@ export default async function IndexRoute() {
       <Services />
       <Testimonials />
       <ContactUs />
+      <Contact24 />
     </>
   )
 }
