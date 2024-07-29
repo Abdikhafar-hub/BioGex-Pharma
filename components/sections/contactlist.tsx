@@ -31,23 +31,23 @@ export const Contact24 = (props: Contact24Props) => {
       <div className="container">
         <div className="mb-12 max-w-lg md:mb-18 lg:mb-20">
           <p className="mb-3 font-semibold md:mb-4">{tagline}</p>
-          <h2 className="mb-5 text-5xl font-bold md:mb-6 md:text-7xl lg:text-8xl">{heading}</h2>
-          <p className="md:text-md">{description}</p>
+          <h2 className="mb-5 text-xl text-slate-500 font-bold md:mb-6 md:text-2xl lg:text-4xl">{heading}</h2>
+          {/* <p className="md:text-md">{description}</p> */}
         </div>
         <div className="grid grid-cols-1 items-start justify-start gap-x-8 gap-y-12 md:grid-cols-2 md:gap-y-16 lg:grid-cols-4">
           {contacts.map((contact, index) => (
             <div key={index}>
-              <div className="mb-5 md:mb-6 text-emerald-600">{contact.icon}</div>
-              <h3 className="mb-3 text-2xl font-bold md:mb-4 md:text-3xl md:leading-[1.3] lg:text-4xl">
+              <div className=" text-emerald-600">{contact.icon}</div>
+              <h3 className="mb-3 text-xl font-semibold">
                 {contact.title}
               </h3>
-              <p className="mb-5 md:mb-6">{contact.description}</p>
-              <a
+              <p className="">{contact.description}</p>
+              {/* <a
                 className="underline ring-offset-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-border-primary focus-visible:ring-offset-2"
                 href={contact.link.url}
               >
                 {contact.link.label}
-              </a>
+              </a> */}
             </div>
           ))}
         </div>
@@ -58,24 +58,24 @@ export const Contact24 = (props: Contact24Props) => {
 
 export const Contact24Defaults: Contact24Props = {
   tagline: "Tagline",
-  heading: "Contact us",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  heading: "Contact List",
+  description: "Get in touch with us",
   contacts: [
     {
       icon: <BiEnvelope className="size-12" />,
       title: "Email",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
+        "INFO@BIOGEXPHARMA.COM",
       link: {
-        label: "hello@relume.io",
+        label: "INFO@BIOGEXPHARMA.COM",
         url: "#",
       },
     },
     {
       icon: <BiMessageDetail className="size-12" />,
-      title: "Live chat",
+      title: "WhatsApp chat",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
+        "+254 748 763980",
       link: {
         label: "Start new chat",
         url: "#",
@@ -85,9 +85,9 @@ export const Contact24Defaults: Contact24Props = {
       icon: <BiPhone className="size-12" />,
       title: "Phone",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
+        "+254 748 763980",
       link: {
-        label: "+1 (555) 000-0000",
+        label: "+254 748 763980",
         url: "#",
       },
     },
@@ -95,9 +95,9 @@ export const Contact24Defaults: Contact24Props = {
       icon: <BiMap className="size-12" />,
       title: "Office",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in ero.",
+        "OFFICE 7, THE CLOSE, NGARA ROAD, NAIROBI KENYA",
       link: {
-        label: "123 Sample St, Sydney NSW 2000 AU",
+        label: "OFFICE 7, THE CLOSE, NGARA ROAD, NAIROBI KENYA",
         url: "#",
       },
     },

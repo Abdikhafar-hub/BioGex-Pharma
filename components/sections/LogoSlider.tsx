@@ -97,7 +97,7 @@ export const InfiniteLogos = ({
                 alt="Partner logo" 
                 fill={true}
                 sizes="(max-width: 768px) 100vw, 1200px"
-                className="object-contain grayscale"
+                className="object-contain grayscae"
               />
             </div>
           </li>

@@ -272,7 +272,7 @@ export const Navbar1Defaults: Navbar1Props = {
     { title: "Home", url: "#" },
     { title: "About Us", url: "about" },
     { title: "Blog", url: "#" },
-    { title: "Products", url: "products" },
+    { title: "Products", url: "product" },
     {
       title: "Services",
       url: "#",
