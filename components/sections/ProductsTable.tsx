@@ -84,9 +84,10 @@ const ProductsTable = () => {
             {products.map((product, index) => (
               <tr key={index} className={`${product?.number % 2 === 0 && 'bg-slate-50'}`}>
                 {/* <td className="px-2 py-2 border-b">{product.number}</td> */}
-                <td className="px-4 py-2 border-b flex flex-col ">
-                  <span className='text-slate-600 text-sm md:text-base font-semibold'>{product.product}</span>
+                <td className="px-4 py-2 border-b text-semibold  ">
+                  {/* <span className='text-slate-600 text-sm md:text-base font-semibold'>{product.product}</span> */}
                   {/* <span className='text-xs md:text-sm text-slate-500'>{product.description}</span> */}
+                  {product.product}
                   
                 </td>
                 <td className="px-4 py-2 border-b">{product.description}</td>
