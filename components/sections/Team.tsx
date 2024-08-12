@@ -8,21 +8,21 @@ const teamMembers = [
     profession: "CEO",
     imageSrc: "/aden.jpg",
   },
-  {
-    name: "Dr. Ahmed Feisal",
-    profession: "COO",
-    imageSrc: "https://i.ibb.co/30tGtjP/image-01-1.jpg",
-  },
-  {
-      name: "Dr. AbdulQafar",
-      profession: "Head of Research",
-      imageSrc: "https://i.ibb.co/yVVT0Dp/image-02-2.jpg",
-    },
-    {
-      name: "Ms. christine ",
-      profession: "Customer Service",
-      imageSrc: "https://i.ibb.co/8P6cvVy/image-04.jpg",
-    },
+  // {
+  //   name: "Dr. Ahmed Feisal",
+  //   profession: "COO",
+  //   imageSrc: "https://i.ibb.co/30tGtjP/image-01-1.jpg",
+  // },
+  // {
+  //     name: "Dr. AbdulQafar",
+  //     profession: "Head of Research",
+  //     imageSrc: "https://i.ibb.co/yVVT0Dp/image-02-2.jpg",
+  //   },
+  //   {
+  //     name: "Ms. christine ",
+  //     profession: "Customer Service",
+  //     imageSrc: "https://i.ibb.co/8P6cvVy/image-04.jpg",
+  //   },
 ];
 
 const Team = () => {
