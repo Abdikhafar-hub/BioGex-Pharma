@@ -6,6 +6,7 @@ import { WhoWeAre } from '@/components/sections/WhoWeAre';
 import { MissionVision } from '@/components/sections/MissionandVision';
 import { CorValues } from '@/components/sections/CoreValues';
 import Team from '@/components/sections/Team';
+import Testimonials from '@/components/sections/Testimonials';
 
 const AboutUsPage: React.FC = () => {
   return (
@@ -30,6 +31,7 @@ const AboutUsPage: React.FC = () => {
         <WhoWeAre />
         {/* <MissionVision /> */}
         <CorValues />
+        <Testimonials />
         <Team />
       </div>
     </div>

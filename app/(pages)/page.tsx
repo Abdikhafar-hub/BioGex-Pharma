@@ -15,15 +15,17 @@ import ContactUs from '@/components/sections/contactus'
 import { InfiniteMovingCards } from '@/components/sections/infintecards'
 import { InfiniteMovingCardsDemo } from '@/components/sections/test2'
 import { Contact24 } from '@/components/sections/contactlist'
+import { loadPartners } from '@/sanity/loader/loadQuery'
+import { Concert_One } from 'next/font/google'
 const HomePagePreview = dynamic(
   () => import('@/components/pages/home/HomePagePreview'),
 )
 
 export default async function IndexRoute() {
-  const initial = await loadHomePage()
+  const initial = await loadHomePage();
 
   if (draftMode().isEnabled) {
-    return <HomePagePreview initial={initial} />
+    return <HomePagePreview initial={initial} />;
   }
 
   if (!initial.data) {
@@ -35,12 +37,20 @@ export default async function IndexRoute() {
         </Link>
         !
       </div>
-    )
+    );
   }
 
+  // const partners = await loadPartners();
+
+  // // Extract logos from partners and format as required
+  // const logoArray = Object.values(partners).map(partner => ({
+  //   logosrc: partner.logo // Assuming the logo URL is available here
+  // }));
+
+  // console.log("logoArray", logoArray);
+  
   return (
     <>
-
       <Hero />
       <InfiniteLogos items={[
         { logosrc: "/gsk.png" },
@@ -52,15 +62,13 @@ export default async function IndexRoute() {
         { logosrc: "/sanofi.png" },
         { logosrc: "/Pfizer.png" },
         { logosrc: "/astrz.png" },
-        { logosrc: "/bayerlogo.png" },
-       
-      
-        ]} />
+        { logosrc: "/bayerlogo.png" },]}
+        />
       <WhoWeAre />
       <Services />
       <Testimonials />
       <ContactUs />
       <Contact24 />
     </>
-  )
+  );
 }

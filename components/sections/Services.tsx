@@ -1,10 +1,10 @@
 'use client'
 import React from "react";
-import { FaShippingFast, FaPills, FaIndustry, FaPlane } from "react-icons/fa";
 import { IoMdPricetags } from "react-icons/io";
 import { motion } from "framer-motion";
 import SectionHeading from "./SectionHeading";
-
+import {IoPricetagsOutline, IoAirplaneOutline} from "react-icons/io5";
+import {LiaPlaneArrivalSolid , LiaShippingFastSolid, LiaFlaskSolid, LiaFileInvoiceDollarSolid} from "react-icons/lia";
 type Service = {
   icon: React.ComponentType;
   title: string;
@@ -13,22 +13,22 @@ type Service = {
 
 const services: Service[] = [
   {
-    icon: FaShippingFast,
+    icon: LiaShippingFastSolid,
     title: "Distribution",
     description: "Efficient distribution network ensuring timely delivery of pharmaceutical products."
   },
   {
-    icon: FaPlane,
+    icon: LiaPlaneArrivalSolid ,
     title: "Import",
     description: "Importing high-quality pharmaceutical products from trusted global suppliers."
   },
   {
-    icon: FaPills,
+    icon: LiaFlaskSolid,
     title: "Manufacturing",
     description: "Our state-of-the-art facilities for the local manufacturing of pharmaceutical products."
   },
   {
-    icon: IoMdPricetags,
+    icon: LiaFileInvoiceDollarSolid,
     title: "Competitive Pricing",
     description: "Offering competitive pricing without compromising on quality."
   }
@@ -47,7 +47,7 @@ const Services: React.FC = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <div className="flex justify-center text-4xl text-green-600 bg-emerald-600/30 p-2 rounded-lg w-fit mb-4">
+              <div className="flex justify-center text-4xl text-emerald-500  bg-black p-2 rounded-lg w-fit mb-4">
                 <service.icon />
               </div>
               <h3 className="text-slate-500 font-bold mb-2  text-lg">{service.title}</h3>

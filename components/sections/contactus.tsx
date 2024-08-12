@@ -1,10 +1,9 @@
 'use client';
 import React, { useState } from 'react';
 import SectionHeading from './SectionHeading';
-import { FaMapMarkerAlt, FaPhoneAlt } from 'react-icons/fa';
-import { FaEnvelope, FaWhatsapp } from 'react-icons/fa6';
 import Decor from './contactformdecor';
 import { sendEmail } from '@/app/actions/sendMail';
+import { BiEnvelope, BiMap, BiLogoWhatsapp, BiPhone } from "react-icons/bi";
 
 function ContactUs() {
   const [formData, setFormData] = useState({
@@ -67,20 +66,20 @@ function ContactUs() {
             />
             <div className="mt-8 flex flex-col items-center w-full md:pl-40">
               {/* Contact Details */}
-              <div className="flex items-center justify-start mb-6 w-full max-w-md">
-                <FaMapMarkerAlt className="text-emerald-700 w-6 h-6 mr-4" />
+              <div className="flex items-center justify-start mb-6 gap-4 w-full max-w-md">
+                <BiMap className="text-emerald-700 mr-4 size-8" />
                 <p className="text-lg text-gray-600">Office 7, The Close, Ngara Road, Nairobi, Kenya</p>
               </div>
-              <div className="flex items-center justify-start mb-6 w-full max-w-md">
-                <FaEnvelope className="text-emerald-700 w-6 h-6 mr-4" />
+              <div className="flex items-center justify-start mb-6 gap-4 w-full max-w-md">
+                <BiEnvelope className="text-emerald-700 mr-4 size-8" />
                 <p className="text-lg text-gray-600">info@biogexpharma.com</p>
               </div>
-              <div className="flex items-center justify-start mb-6 w-full max-w-md">
-                <FaPhoneAlt className="text-emerald-700 w-6 h-6 mr-4" />
+              <div className="flex items-center justify-start mb-6 gap-4 w-full max-w-md">
+                <BiPhone className="text-emerald-700 mr-4 size-8" />
                 <p className="text-lg text-gray-600">+254 748 763980</p>
               </div>
-              <div className="flex items-center justify-start mb-6 w-full max-w-md">
-                <FaWhatsapp className="text-emerald-700 w-6 h-6 mr-4" />
+              <div className="flex items-center justify-start mb-6 gap-4 w-full max-w-md">
+                <BiLogoWhatsapp className="text-emerald-700 mr-4 size-8" />
                 <p className="text-lg text-gray-600">+254 748 763980</p>
               </div>
             </div>

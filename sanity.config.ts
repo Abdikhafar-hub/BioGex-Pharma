@@ -19,10 +19,20 @@ import milestone from '@/sanity/schemas/objects/milestone'
 import timeline from '@/sanity/schemas/objects/timeline'
 import home from '@/sanity/schemas/singletons/home'
 import settings from '@/sanity/schemas/singletons/settings'
+import {
+  partners,
+  who_we_are,
+  core_value,
+  team,
+  services,
+  testimonials,
+  contacts,
+  social_media_links,
+} from '@/sanity/schemas/documents/others'
 
 const title =
   process.env.NEXT_PUBLIC_SANITY_PROJECT_TITLE ||
-  'Next.js Personal Website with Sanity.io'
+  'Next.js Website with Sanity.io'
 
 export default defineConfig({
   basePath: studioUrl,
@@ -39,6 +49,14 @@ export default defineConfig({
       duration,
       page,
       project,
+      partners,
+      who_we_are,
+      core_value,
+      team,
+      services,
+      testimonials,
+      contacts,
+      social_media_links,
       // Objects
       milestone,
       timeline,

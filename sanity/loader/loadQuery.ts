@@ -9,6 +9,14 @@ import {
   pagesBySlugQuery,
   projectBySlugQuery,
   settingsQuery,
+  partnersQuery,
+  who_we_areQuery,
+  core_valueQuery,
+  teamQuery,
+  servicesQuery,
+  testimonialsQuery,
+  contactsQuery,
+  social_media_linksQuery,
 } from '@/sanity/lib/queries'
 import { token } from '@/sanity/lib/token'
 import {
@@ -16,6 +24,14 @@ import {
   PagePayload,
   ProjectPayload,
   SettingsPayload,
+  PartnerPayload,
+  WhoWeArePayload,
+  CoreValuePayload,
+  TeamPayload,
+  ServicesPayload,
+  TestimonialsPayload,
+  ContactsPayload,
+  SocialMediaLinksPayload,
 } from '@/types'
 
 const serverClient = client.withConfig({
@@ -93,3 +109,36 @@ export function loadPage(slug: string) {
     { next: { tags: [`page:${slug}`] } },
   )
 }
+
+export function loadPartners() {
+  return loadQuery<PartnerPayload[]>(partnersQuery, {}, { next: { tags: ['partners'] } })
+}
+
+export function loadWhoWeAre() {
+  return loadQuery<WhoWeArePayload>(who_we_areQuery, {}, { next: { tags: ['who_we_are'] } })
+} 
+
+export function loadCoreValue() {
+  return loadQuery<CoreValuePayload[]>(core_valueQuery, {}, { next: { tags: ['core_value'] } })
+}
+
+export function loadTeam() {
+  return loadQuery<TeamPayload[]>(teamQuery, {}, { next: { tags: ['team'] } })
+}
+
+export function loadServices() {
+  return loadQuery<ServicesPayload[]>(servicesQuery, {}, { next: { tags: ['services'] } })
+}
+
+export function loadTestimonials() {
+  return loadQuery<TestimonialsPayload[]>(testimonialsQuery, {}, { next: { tags: ['testimonials'] } })
+}
+
+export function loadContacts() {
+  return loadQuery<ContactsPayload[]>(contactsQuery, {}, { next: { tags: ['contacts'] } })
+}
+
+export function loadSocialMediaLinks() {
+  return loadQuery<SocialMediaLinksPayload[]>(social_media_linksQuery, {}, { next: { tags: ['social_media_links'] } })
+} 
+
