@@ -1,11 +1,12 @@
 'use client'
 
 import { ChevronRightIcon } from '@sanity/icons';
+import Link from 'next/link';
 import React from 'react';
 
 export interface MyButtonProps {
   title: string;
-  onClick?: () => void;
+  onClick?: string;
   variant?: 'primary' | 'secondary' | 'black' | 'white' | 'link';
 }
 
@@ -20,15 +21,17 @@ const Button: React.FC<MyButtonProps> = ({ title, onClick, variant = 'primary' }
   };
 
   return (
-    <button onClick={onClick} className={styles[variant]}>
-      <p
-      className='text-center flex items-center justify-center'
-      ><span>{title}</span>
-        {variant  &&
-         <ChevronRightIcon  className="w-8 h-8" />
-        }
-      </p>
-    </button>
+    <button  className={styles[variant]}>
+        <Link href={onClick || ''}>
+        <p
+        className='text-center flex items-center justify-center'
+        ><span>{title}</span>
+          {variant  &&
+           <ChevronRightIcon  className="w-8 h-8" />
+          }
+        </p>
+    </Link>
+      </button>
   );
 };
 

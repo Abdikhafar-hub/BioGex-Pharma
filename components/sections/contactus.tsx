@@ -55,7 +55,7 @@ function ContactUs() {
   };
 
   return (
-    <section className="bg-white py-20 px-8 md:px-20 overflow-hidden relative z-10">
+    <section id='contact' className="bg-white py-20 px-8 md:px-20 overflow-hidden relative z-10">
       <div className="container">
         <div className="flex flex-wrap lg:justify-between -mx-4">
           <div className="w-full lg:w-1/2 xl:w-6/12 px-4">

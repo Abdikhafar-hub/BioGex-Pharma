@@ -23,7 +23,7 @@ type ButtonProps = {
   title: string;
   variant?: "primary" | "secondary";
   size?: "sm" | "md" | "lg";
-  link: string;
+  onClick?: string;
 };
 
 type Props = {
@@ -184,11 +184,9 @@ export const Navbar1 = (props: Navbar1Props) => {
             ))}
             <div className="mt-6 flex flex-col items-start gap-4 lg:ml-4 lg:mt-0 lg:flex-row">
               {buttons.map((button, index) => (
-                <Link href={button.link}  onClick={handleLinkClick} key={`${button.title}-${index}`} passHref>
                
-                    <Button variant={button.variant} title={button.title} />
+                    <Button variant={button.variant} title={button.title} key={`${button.title}-${index}`}  onClick={button.onClick} />
                 
-                </Link>
               ))}
             </div>
           </motion.div>
@@ -271,7 +269,7 @@ export const Navbar1Defaults: Navbar1Props = {
   links: [
     { title: "Home", url: "#" },
     { title: "About Us", url: "about" },
-    { title: "Blog", url: "#" },
+    { title: "Contact Us", url: "#contact" },
     { title: "Products", url: "product" },
     {
       title: "Services",
@@ -294,7 +292,8 @@ export const Navbar1Defaults: Navbar1Props = {
       title: "Get a quote",
       size: "sm",
       variant: "primary",
-      link: ""
+      onClick: "/#contact",
+      
     },
   ],
 };

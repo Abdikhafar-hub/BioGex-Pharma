@@ -42,11 +42,13 @@ function Hero() {
               <Button
               title='Get a quote now'
               variant='primary'
+              onClick='/#contact'
               
                />
                <Button
               title='Explore Our Products'
               variant='link'
+              onClick='/products'
               
                />
             </div>
