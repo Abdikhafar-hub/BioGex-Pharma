@@ -104,11 +104,11 @@ export const Footer4Defaults: Footer4Props = {
   columnLinks: [
     {
       links: [
-        { title: "Home", url: "#" },
-        { title: "About Us", url: "#" },
-        { title: "Products", url: "#" },
-        { title: "Services", url: "#" },
-        { title: "Blog", url: "#" },
+        { title: "Home", url: "/" },
+        { title: "About Us", url: "/about" },
+        { title: "Products", url: "/products" },
+        { title: "Services", url: "/#services" },
+        // { title: "Blog", url: "/" },
 
       ],
     },
