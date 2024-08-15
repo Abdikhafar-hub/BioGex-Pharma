@@ -48,7 +48,7 @@ function Hero() {
                <Button
               title='Explore Our Products'
               variant='link'
-              onClick='/products'
+              onClick='/product'
               
                />
             </div>
