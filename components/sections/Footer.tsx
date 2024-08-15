@@ -106,7 +106,7 @@ export const Footer4Defaults: Footer4Props = {
       links: [
         { title: "Home", url: "/" },
         { title: "About Us", url: "/about" },
-        { title: "Products", url: "/products" },
+        { title: "Products", url: "/product" },
         { title: "Services", url: "/#services" },
         // { title: "Blog", url: "/" },
 

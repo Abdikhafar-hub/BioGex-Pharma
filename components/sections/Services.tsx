@@ -36,7 +36,7 @@ const services: Service[] = [
 
 const Services: React.FC = () => {
   return (
-    <section className="py-12 bg-gradient-to-t from-green-100 via-green-50 to-white bg-no-repeat bg-cover">
+    <section id="services" className="py-12 bg-gradient-to-t from-green-100 via-green-50 to-white bg-no-repeat bg-cover">
       <div className="container mx-auto px-6 text-center">
        <SectionHeading tagline="quality services" title="Our Services" description="We offer a wide range of services to meet your needs." />
         <div className="flex flex-wrap justify-center gap-6 mt-4 ">
