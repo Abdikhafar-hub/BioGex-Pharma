@@ -27,7 +27,7 @@ function Hero() {
             {/* badge that says welcome to biogex */}
             <div className='flex  items-center justify-around w-fit z-20 bg-emerald-600/10 border border-emerald-300/50 rounded-lg h-fit p-1 px-2'>
             
-              <p className='text'>Welcome to BioGex Pharma</p>
+              <p className='text'>Welcome to BioGex Pharma LTD</p>
 
             </div>
             <div className="flex flex-col gap-5 w-full">
